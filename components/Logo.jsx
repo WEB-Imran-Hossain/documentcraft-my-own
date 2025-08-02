@@ -4,11 +4,14 @@ import Image from "next/image";
 const Logo = () => {
   return (
     <div className="hidden lg:flex">
-      <Link aria-label="Home" href="/">
+      <Link href="/">
         <Image
-          src="./assets/icons/logo.svg"
-          alt="Protocol"
           className="h-6 w-auto"
+          src="/logo.svg"
+          alt="Logo"
+          width={100}
+          height={24}
+          priority
         />
       </Link>
     </div>
